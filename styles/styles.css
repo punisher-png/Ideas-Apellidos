@@ -1,3 +1,4 @@
+style.css
 *{
     margin: 0;
     padding: 0;
@@ -92,7 +93,7 @@ body{
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     flex-direction:row;
     margin: 45px 180px 0 0;
     min-width:min-content;
@@ -108,7 +109,7 @@ nav a{
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     margin-right: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 nav a:hover{
@@ -151,7 +152,7 @@ main{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
 }
-.gritando-señor{
+.gritando-senor{
     display: flex;
     flex-direction: row;
     background: #fc4a1a;  /* fallback for old browsers */
