@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
     height: 100%;
@@ -8,7 +9,6 @@ html{
 
 /*HEADER*/
 body{
-    position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
 }
@@ -20,6 +20,11 @@ body{
 }
 .logo{
     height: 240px;
+    display: inline-block;
+    margin: 0 0.0;
+  
+    animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration!*/ 
 }
 .imagenes-redes{
     display: flex;
@@ -53,9 +58,6 @@ body{
     width: 70px;
     display: inline-block;
     margin: 0 0.5rem;
-  
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
 }
 .central{
     font-size: 13px;
@@ -64,8 +66,8 @@ body{
     display: inline-block;
     margin: 0 0.5rem;
   
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    display: inline-block;
+    margin: 0 0.5rem;
 }
 .num{
     font-size: 31px;
@@ -73,9 +75,6 @@ body{
     color: rgb(255, 146, 30);
     display: inline-block;
     margin: 0 0.5rem;
-  
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
 }
 .telefono-naranja{
     display: flex;
@@ -89,18 +88,28 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+.nav-pills a{
+    font-size: 18px;
+    color: rgba(40, 51, 114, 1);
+}
 nav{
     display: flex;
     justify-content:space-between;
     flex-direction:row;
-    margin: 45px 180px 0 0;
+    margin: 10px 180px 0 0;
     min-width:min-content;
+    
 }
+.nav-pills  {
+    --bs-nav-pills-border-radius: 0.375rem;
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: rgb(255, 146, 30)
+    !important;
+}
+
 a{
     padding: 0 50px 0 0px;
 }
-
 nav a{
     color: rgba(40, 51, 114, 1);
     font-weight: 200;
@@ -110,9 +119,11 @@ nav a{
     margin-right: 10px;
     font-size: 20px;
 }
-
 nav a:hover{
     text-decoration:underline;
+}
+.menu-icon img{
+    height: 30px;
 }
 /*MAIN*/
 main{
@@ -159,6 +170,13 @@ main{
     background: linear-gradient(to bottom, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 600px;
 }
+.gritando{
+    display: inline-block;
+    margin: 0 0.15rem;
+  
+    animation: backOutRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration!*/ 
+}
 .tarjeta-medida{
     display: flex;
     flex-direction: row;
@@ -170,6 +188,11 @@ main{
 }
 .tarjeta{
     width: 500px;
+    display: inline-block;
+    margin: 0 0.0;
+  
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration!*/ 
 }
 .seccion-texto{
     height: 300px;
@@ -214,11 +237,21 @@ main{
 }
 .cards{
     height: 300px;
+    display: inline-block;
+    margin: 0 0.0;
+  
+    animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration!*/ 
 }
 .p{
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     color: rgba(40, 51, 114, 1);
+    display: inline-block;
+    margin: 0 0.0;
+  
+    animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration!*/ 
 }
 .division{
     display: flex;
@@ -256,7 +289,7 @@ main{
     height: 100px;
 }
 .redes-final{
-    height: 100px;
+    height: 80px;
     min-width:min-content;
 }
 .container{
@@ -302,15 +335,66 @@ main{
     height: auto;
     width: 100%;
 }
-.portafolio{
-    font-size: 300px;
+.portafo{
+    font-size: 370px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgba(40, 51, 114, 1);
-    position: absolute;
-    top: 410px;
-    left: 250px;
-    min-width: auto;
-    max-width: auto;
+    background: url(/img/p);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+
+}
+.portafon{
+    font-size: 350px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(40, 51, 114, 1);
+    line-height: 370px;
+    background: url(fondo.png);
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+}
+.portafos{
+    font-size: 400px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(40, 51, 114, 1);
+    background: url(/img/PORTAFOLIO.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+}
+.portafoc{
+    font-size: 380px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    line-height: 370px;
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.portafoc p{
+    display: inline-block;
+    margin: 0 0.0rem;
+  
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.portada{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
 }
 .cuerpo{
     background: #fc4a1a;  /* fallback for old browsers */
@@ -325,14 +409,21 @@ main{
 }
 .contenedor-texto{
     height: 250px;
-    width: 900px;
-    position: relative;
-    top: 50px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter';
 }
 .contenedor-texto p{
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Inter', sans-serif;
-    color: white
+    color: white;
+    display: inline-block;
+    margin: 0 0.0;
+  
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration!*/ 
 }
 .tarjetas{
     width: 500px;
@@ -354,6 +445,23 @@ main{
     font-family: Impact, Haettenschweiler, Arial, Helvetica, sans-serif, sans-serif;
     color: rgba(40, 51, 114, 1);
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 280px;
+    color: rgba(40, 51, 114, 1); 
+}
+.centrar-form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 600px;
+    font-size: 22px;
+    color: rgba(40, 51, 114, 1);
+}
+
 /*FOOTER*/
 .logo-direc{
     position: absolute;
@@ -415,6 +523,45 @@ main{
 .caja:hover {
     transform: rotateY(960deg);
 }
+/*NOSOTROS*/
+.imagen img{
+    display: inline-block;
+    margin: 0 0.0;
+  
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration!*/ 
+}
+.cuerpon{
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    max-height: auto;
+    width: auto;
+    min-width:auto;
+    display: flex;
+    justify-content:center;
+}
+.contenedor-texton{
+    height: 300px;
+    width: 900px;
+    display:flex;
+    font-family: 'Inter';
+}
+.text-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenedor-texton p{
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0 0.0;
+  
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration!*/ 
+}
 /*GRID*/
 .grid{
     display: grid;
@@ -427,7 +574,8 @@ main{
 
 .grid-1{
     grid-area: grid-1;
-    height: 245px;
+    height: auto;
+    width: 100%;
     
 }
 .grid-2{
@@ -466,6 +614,16 @@ main{
     width: 100%;
 }
 /*MEDIA*/
+@media (max-width: 952px){
+    .imagen-logo{
+        padding-left: 20px;
+    }
+    nav a{
+        font-size: 16px;
+    }
+
+}
+
 @media (min-width: 600px){
     .grid{
         grid-template-columns: 240px auto 300px;
@@ -476,14 +634,8 @@ main{
         "grid-3" 300px;
     }
 }
-@media (min-width: 600px){
-    .proyectos-grid{
-        grid-template-columns: 240px auto 300px;
-        grid-template-rows: auto;
-        grid-template:       
-        "progrid-1"
-        "progrid-2"
-        "progrid-4"
-        "progrid-3"
+@media (max-width: 768px){
+    .crece{
+         width: 1500px;
     }
 }
