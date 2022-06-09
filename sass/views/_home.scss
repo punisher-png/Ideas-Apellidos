@@ -1,0 +1,130 @@
+main {
+	max-width: 1200%;
+	margin: auto;
+}
+.slogan {
+	.hombre-gritando {
+		flex: 1 1 40rem;
+		img {
+			height: 500px;
+			padding: 1rem;
+		}
+	}
+	.frase-letra {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-top: 50px;
+		padding-left: 260px;
+		img {
+			height: 130px;
+		}
+	}
+}
+.letra-slogan {
+	font-size: 80px;
+	font-family: $font-secundary;
+	color: $leters-secundary-color;
+}
+.tu-negocio {
+	font-size: 120px;
+	font-family: $font-secundary;
+	color: $leters-secundary-color;
+}
+.gritando-senor {
+	display: flex;
+	flex-direction: row;
+	background: $main-bg-color;
+	height: 600px;
+}
+.gritando {
+	display: inline-block;
+	margin: 0 0.15rem;
+	animation: backOutRight;
+	animation-duration: 2s;
+}
+.tarjeta-medida {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	position: absolute;
+	top: 750px;
+	min-width: min-content;
+}
+.tarjeta {
+	width: 500px;
+	display: inline-block;
+	margin: 0 0.0;
+	animation: backInUp;
+	animation-duration: 2s;
+}
+.seccion-texto {
+	height: 300px;
+	margin: 180px 0 0 0;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	h3 {
+		font-size: 30px;
+		font-family: $font-principal;
+		color: $leters-primary-color;
+	}
+	p {
+		font-size: 18px;
+		font-family: $font-principal;
+		color: $leters-primary-color;
+	}
+}
+.contenedor-chico {
+	height: 800px;
+}
+.divi {
+	h4 {
+		position: absolute;
+		top: 1370px;
+		font-size: 60px;
+		font-family: $font-principal;
+		color: $leters-secundary-color;
+		min-inline-size: 40px;
+	}
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background: $main-bg-color;
+	height: 300px;
+	min-width: min-content;
+}
+.cards {
+	height: 300px;
+	display: inline-block;
+	margin: 0 0.0;
+	animation: shakeY;
+	animation-duration: 2s;
+}
+.p {
+	font-size: 18px;
+	font-family: $font-principal;
+	color: $leters-primary-color;
+	display: inline-block;
+	margin: 0 0.0;
+	animation: shakeY;
+	animation-duration: 2s;
+}
+.division {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	bottom: 100px;
+}
+.contenedor-chic {
+	height: 20px;
+}
+.proyectos {
+	position: relative;
+	bottom: 150px;
+}

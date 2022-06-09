@@ -1,0 +1,116 @@
+body {
+	padding-bottom: 3em;
+	min-height: 100vh;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	width: 100%;
+	min-width: auto;
+	.imagen-logo {
+		width: 30%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.parte-izquierda {
+		width: 100%;
+		align-items: center;
+	}
+}
+.imagen-logo {
+	.logo {
+		height: 240px;
+		display: inline-block;
+		margin: 0 0.0;
+		animation: slideInDown;
+		animation-duration: 2s;
+	}
+}
+.parte-izquierda {
+	.imagenes-redes {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+		margin: 20px 90px 0 0;
+		.redes {
+			width: 50px;
+			margin: 0 5px 0 0;
+		}
+	}
+	.imagen-naranja {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+		margin: 15px 90px 0 0;
+		.tel {
+			width: 70px;
+			display: inline-block;
+			margin: 0 0.5rem;
+		}
+	}
+	.nav-pills {
+		a {
+			font-size: 18px;
+			color: $leters-primary-color;
+		}
+	}
+}
+.imagen-naranja {
+	.texto-naranja {
+		.central {
+			font-size: 13px;
+			font-family: $font-principal;
+			color: rgb(255, 146, 30);
+			display: inline-block;
+			margin: 0 0.5rem;
+			display: inline-block;
+			margin: 0 0.5rem;
+		}
+		.num {
+			font-size: 31px;
+			font-family: $font-secundary;
+			color: $image-primary-color;
+			display: inline-block;
+			margin: 0 0.5rem;
+		}
+	}
+	display: flex;
+	flex-direction: row;
+}
+.telefono-naranja {
+	display: flex;
+	flex-direction: row;
+}
+.texto-naranja {
+	display: flex;
+	flex-direction: column;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 10px 180px 0 0;
+	min-width: min-content;
+	a {
+		color: $leters-primary-color;
+		font-weight: 200;
+		font-family: $font-principal;
+		text-decoration: none;
+		margin-right: 10px;
+		font-size: 20px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.nav-pills {
+	--bs-nav-pills-border-radius: 0.375rem;
+	--bs-nav-pills-link-active-color: #fff;
+	--bs-nav-pills-link-active-bg: rgb(255, 146, 30) !important;
+}
+a {
+	padding: 0 50px 0 0px;
+}
+

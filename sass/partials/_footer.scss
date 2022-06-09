@@ -1,0 +1,60 @@
+.final {
+	width: auto;
+	height: auto;
+	background: $main-bg-color;
+	min-height: min-content;
+	max-height: max-content;
+	.logo {
+		.logo-final {
+			height: 220px;
+		}
+	}
+}
+.logo-direccion {
+	position: absolute;
+	left: 50px;
+	top: 2080px;
+}
+.direccion {
+	height: 100px;
+}
+.redes-final {
+	height: 80px;
+	min-width: min-content;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: absolute;
+	top: 2120px;
+	left: 320px;
+}
+.divTelefono {
+	position: relative;
+	left: 130px;
+}
+.divMail {
+	position: relative;
+	left: 260px;
+}
+.test {
+	font-size: 15px;
+	font-family: $font-principal;
+	color: $leters-secundary-color;
+}
+.red {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	left: 1430px;
+	top: 2120px;
+	min-width: 60px;
+}
+.parrafo-final {
+	margin: 8px 0 0 0;
+	font-size: 16px;
+	font-family: $font-principal;
+	text-align: center;
+}
+
