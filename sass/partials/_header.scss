@@ -34,6 +34,10 @@ body {
 		justify-content: flex-end;
 		flex-direction: row;
 		margin: 20px 90px 0 0;
+		&--active {
+			@extend .imagenes-redes;
+			border: solid 2px orange;
+		}
 		.redes {
 			width: 50px;
 			margin: 0 5px 0 0;
@@ -44,6 +48,10 @@ body {
 		justify-content: flex-end;
 		flex-direction: row;
 		margin: 15px 90px 0 0;
+		&--b {
+			@extend .imagen-naranja;
+			border: solid 2px orange;
+		}
 		.tel {
 			width: 70px;
 			display: inline-block;
@@ -53,7 +61,7 @@ body {
 	.nav-pills {
 		a {
 			font-size: 18px;
-			color: $leters-primary-color;
+			color: map-get($colors, leters-primary-color);
 		}
 	}
 }
@@ -62,7 +70,7 @@ body {
 		.central {
 			font-size: 13px;
 			font-family: $font-principal;
-			color: rgb(255, 146, 30);
+			color: map-get($colors, image-primary-color);
 			display: inline-block;
 			margin: 0 0.5rem;
 			display: inline-block;
@@ -71,7 +79,7 @@ body {
 		.num {
 			font-size: 31px;
 			font-family: $font-secundary;
-			color: $image-primary-color;
+			color: map-get($colors, image-primary-color);
 			display: inline-block;
 			margin: 0 0.5rem;
 		}
@@ -80,12 +88,10 @@ body {
 	flex-direction: row;
 }
 .telefono-naranja {
-	display: flex;
-	flex-direction: row;
+	@include flex(row)
 }
 .texto-naranja {
-	display: flex;
-	flex-direction: column;
+	@include flex(column)
 }
 nav {
 	display: flex;
@@ -94,7 +100,7 @@ nav {
 	margin: 10px 180px 0 0;
 	min-width: min-content;
 	a {
-		color: $leters-primary-color;
+		color: map-get($colors, leters-primary-color);
 		font-weight: 200;
 		font-family: $font-principal;
 		text-decoration: none;

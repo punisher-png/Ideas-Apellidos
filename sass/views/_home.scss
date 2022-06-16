@@ -1,6 +1,9 @@
-main {
+@mixin primero ( $argumento1 , $argumento2) {
 	max-width: 1200%;
 	margin: auto;
+} 
+main{
+	@include primero (1200% , auto);
 }
 .slogan {
 	.hombre-gritando {
@@ -24,12 +27,12 @@ main {
 .letra-slogan {
 	font-size: 80px;
 	font-family: $font-secundary;
-	color: $leters-secundary-color;
+	color: map-get($colors, leters-secundary-color);
 }
 .tu-negocio {
 	font-size: 120px;
 	font-family: $font-secundary;
-	color: $leters-secundary-color;
+	color: map-get($colors, leters-secundary-color);
 }
 .gritando-senor {
 	display: flex;
@@ -70,12 +73,12 @@ main {
 	h3 {
 		font-size: 30px;
 		font-family: $font-principal;
-		color: $leters-primary-color;
+		color: map-get($colors, leters-primary-color)
 	}
 	p {
 		font-size: 18px;
 		font-family: $font-principal;
-		color: $leters-primary-color;
+		color: map-get($colors, leters-primary-color)
 	}
 }
 .contenedor-chico {
@@ -87,7 +90,7 @@ main {
 		top: 1370px;
 		font-size: 60px;
 		font-family: $font-principal;
-		color: $leters-secundary-color;
+		color: map-get($colors, leters-secundary-color);
 		min-inline-size: 40px;
 	}
 	align-items: center;
@@ -108,7 +111,7 @@ main {
 .p {
 	font-size: 18px;
 	font-family: $font-principal;
-	color: $leters-primary-color;
+	color: map-get($colors, leters-primary-color);
 	display: inline-block;
 	margin: 0 0.0;
 	animation: shakeY;

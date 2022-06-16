@@ -41,7 +41,7 @@
 .test {
 	font-size: 15px;
 	font-family: $font-principal;
-	color: $leters-secundary-color;
+	color: map-get($colors, leters-secundary-color);
 }
 .red {
 	display: flex;
