@@ -36,7 +36,7 @@ body {
 		margin: 20px 90px 0 0;
 		&--active {
 			@extend .imagenes-redes;
-			border: solid 2px orange;
+			border: solid 2px white;
 		}
 		.redes {
 			width: 50px;
@@ -50,7 +50,7 @@ body {
 		margin: 15px 90px 0 0;
 		&--b {
 			@extend .imagen-naranja;
-			border: solid 2px orange;
+			border: solid 2px white;
 		}
 		.tel {
 			width: 70px;

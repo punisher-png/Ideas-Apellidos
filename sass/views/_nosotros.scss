@@ -1,0 +1,54 @@
+.imagen img {
+    display: inline-block;
+    margin: 0 0.0;
+    animation: zoomIn;
+  
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+  
+    /* don't forget to set a duration!*/
+  }
+  
+  .cuerpon {
+    background: #fc4a1a;
+  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f7b733, #fc4a1a);
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    max-height: auto;
+    width: auto;
+    min-width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contenedor-texton {
+    height: 300px;
+    width: 900px;
+    display: flex;
+    font-family: 'Inter';
+  }
+  
+  .text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contenedor-texton p {
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    color: map-get($colors, leters-secundary-color);
+    margin: 0 0.0;
+    animation: zoomIn;
+  
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+  
+    /* don't forget to set a duration!*/
+  }

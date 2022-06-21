@@ -26,11 +26,25 @@
       font-size: 16px; } }
 
 /* Hasta aquí aplique mixin A MI MEDIAQUIRE*/
-@media (min-width: 600px) {
+@media (max-width: 952px) {
+  .imagen-logo {
+    padding-left: 20px; }
+  nav a {
+    font-size: 16px; }
+  .portafo {
+    font-size: 120; } }
+
+@media (min-width: 1134px) {
+  .portafo {
+    font-size: 80; } }
+
+@media (max-width: 600px) {
   .grid {
     grid-template-columns: 240px auto 300px;
     grid-template-rows: auto;
-    grid-template: "grid-1" 250px "grid-2" 500px "grid-3" 300px; } }
+    grid-template: "grid-1" 250px "grid-2" 500px "grid-3" 300px; }
+  .portafo {
+    font-size: 90; } }
 
 @media (max-width: 768px) {
   .crece {
@@ -95,7 +109,7 @@ body {
   flex-direction: row;
   margin: 20px 90px 0 0; }
   .parte-izquierda .imagenes-redes--active {
-    border: solid 2px orange; }
+    border: solid 2px white; }
   .parte-izquierda .imagenes-redes .redes, .parte-izquierda .imagenes-redes--active .redes {
     width: 50px;
     margin: 0 5px 0 0; }
@@ -106,7 +120,7 @@ body {
   flex-direction: row;
   margin: 15px 90px 0 0; }
   .parte-izquierda .imagen-naranja--b {
-    border: solid 2px orange; }
+    border: solid 2px white; }
   .parte-izquierda .imagen-naranja .tel, .parte-izquierda .imagen-naranja--b .tel {
     width: 70px;
     display: inline-block;
@@ -344,3 +358,250 @@ main {
 .proyectos {
   position: relative;
   bottom: 150px; }
+
+.imagen img {
+  display: inline-block;
+  margin: 0 0.0;
+  animation: zoomIn;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration!*/ }
+
+.cuerpon {
+  background: #fc4a1a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f7b733, #fc4a1a);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: auto;
+  max-height: auto;
+  width: auto;
+  min-width: auto;
+  display: flex;
+  justify-content: center; }
+
+.contenedor-texton {
+  height: 300px;
+  width: 900px;
+  display: flex;
+  font-family: 'Inter'; }
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.contenedor-texton p {
+  font-size: 22px;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  margin: 0 0.0;
+  animation: zoomIn;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration!*/ }
+
+/*FOOTER*/
+/*NOSOTROS*/
+.log {
+  min-width: max-content; }
+
+.mural {
+  height: auto;
+  width: 100%; }
+
+.portafo {
+  font-size: 270px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--leters-primary-color);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  animation: bounce;
+  animation-duration: 5s; }
+
+.portada {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto; }
+  .portada img {
+    width: 100%; }
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  perspective: 700px; }
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.cuerpo {
+  background: #fc4a1a;
+  background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);
+  background: linear-gradient(to bottom, #f7b733, #fc4a1a);
+  height: auto;
+  max-height: auto;
+  width: auto;
+  min-width: auto;
+  display: flex;
+  justify-content: center; }
+
+.contenedor-texto {
+  height: 250px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Inter'; }
+  .contenedor-texto p {
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    display: inline-block;
+    margin: 0 0.0;
+    animation: zoomIn;
+    animation-duration: 2s; }
+
+.tarjetas {
+  width: 500px; }
+
+.imagenes-portafolio {
+  text-align: center;
+  max-height: min-content; }
+
+.centrar {
+  align-items: center; }
+  .centrar h1 {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #283372; }
+  .centrar p {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, Arial, Helvetica, sans-serif, sans-serif;
+    color: #283372; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  color: #283372; }
+
+.centrar-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  font-size: 22px;
+  color: #283372; }
+
+.logo-direc {
+  position: absolute;
+  top: 3880px;
+  left: 50px; }
+
+.contain {
+  position: absolute;
+  left: 350px; }
+
+.red-final {
+  position: absolute;
+  top: 3950px;
+  left: 1420px; }
+
+.divDireccion-a {
+  position: absolute;
+  left: 50px;
+  top: 80px; }
+
+.divTelefono-b {
+  position: absolute;
+  left: 420px;
+  top: 80px; }
+
+.divMail-c {
+  position: absolute;
+  left: 750px;
+  top: 80px; }
+
+.r {
+  margin: 0;
+  background: #eee;
+  display: flex;
+  min-height: 100vh; }
+
+.caja {
+  width: 300px;
+  height: 300px;
+  background: crimson;
+  transition: all 10s;
+  transform: rotateX(0deg);
+  transform-style: preserve-3d; }
+  .caja:hover {
+    transform: rotateY(960deg); }
+
+.cara {
+  width: 300px;
+  height: 300px;
+  background-color: #f7b733;
+  margin: auto;
+  transform: rotateY(90deg); }
+
+.imagen img {
+  display: inline-block;
+  margin: 0 0.0;
+  animation: zoomIn;
+  animation-duration: 2s; }
+
+.cuerpon {
+  background: #fc4a1a;
+  background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);
+  background: linear-gradient(to bottom, #f7b733, #fc4a1a);
+  height: auto;
+  max-height: auto;
+  width: auto;
+  min-width: auto;
+  display: flex;
+  justify-content: center; }
+
+.contenedor-texton {
+  height: 300px;
+  width: 900px;
+  display: flex;
+  font-family: 'Inter'; }
+  .contenedor-texton p {
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0 0.0;
+    animation: zoomIn;
+    animation-duration: 2s; }
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.portafon {
+  background-color: white;
+  font-size: 180px;
+  max-width: auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--image-primary-color);
+  line-height: 220px;
+  display: inline-block;
+  animation: pulse;
+  animation-duration: 2s; }
